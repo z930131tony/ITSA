@@ -11,5 +11,4 @@ int main()
     k = m * 1.6 ;
     cout <<fixed<<setprecision(1)<< k << endl;
 
-    
 }
