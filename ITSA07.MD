@@ -33,4 +33,5 @@ int main(){ int n; cin>>n; while (n--) { int a1,a2,b1,b2; char w; cin>>w>>a1>>a2
 
 }
 
-## 正確截圖 image
+## 正確截圖 
+<img src=""/>
