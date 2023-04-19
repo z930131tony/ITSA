@@ -1,28 +1,21 @@
-#include <iostream>  
-using namespace std;  
-  
-int main()  
-{  
-    int a,b,count;  
-    int *num;  
-    count = 0;  
-    cin >> a >> b;  
-    num = new int[a * b];  
-    for (int i = 0;i < (a * b); i++)  
-    {  
-        cin >> num[i];  
-    }  
-    for (int i = 0;i < b; i++)  
-    {  
-        for (int j = 0;j < a; j++)  
-        {  
-            count++;  
-            cout << num[j * b + i];  
-            if (count % a != 0)  
-            cout << " ";  
-        }  
-        cout << endl;  
-    }  
-    delete []num;  
-    return 0;  
-}  
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	long double r, sum;
+	long int n, p;
+	cin >> r;
+	cin >> n;
+	cin >> p;
+
+	sum = 0;
+	while (n > 0)
+	{
+		sum += p;
+		sum *= (1.0 + r);
+		n--;
+	}
+	cout << (long long)sum << endl;
+	return 0;
+}
